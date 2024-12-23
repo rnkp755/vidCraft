@@ -18,7 +18,6 @@ CREATE TABLE "users" (
 	"name" text NOT NULL,
 	"email" text NOT NULL,
 	"is_subscribed" boolean DEFAULT false NOT NULL,
-	"is_verified" boolean DEFAULT false NOT NULL,
 	"credits" smallint DEFAULT 0 NOT NULL,
 	"updated_at" timestamp (6) with time zone,
 	"created_at" timestamp (6) with time zone DEFAULT now() NOT NULL,

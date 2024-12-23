@@ -1,5 +1,5 @@
 {
-  "id": "145c1cb2-6e75-4cad-b885-75a5eb82bc6d",
+  "id": "106d0d8d-2421-43c0-8cf3-804ecc3f1a00",
   "prevId": "00000000-0000-0000-0000-000000000000",
   "version": "7",
   "dialect": "postgresql",
@@ -166,13 +166,6 @@
         },
         "is_subscribed": {
           "name": "is_subscribed",
-          "type": "boolean",
-          "primaryKey": false,
-          "notNull": true,
-          "default": false
-        },
-        "is_verified": {
-          "name": "is_verified",
           "type": "boolean",
           "primaryKey": false,
           "notNull": true,
