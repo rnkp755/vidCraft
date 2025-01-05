@@ -13,7 +13,7 @@ const SocialsAuth = () => {
       const signInWith = (strategy: OAuthStrategy) => {
             return signIn.authenticateWithRedirect({
                   strategy,
-                  redirectUrl: "/sign-in/sso-callback",
+                  redirectUrl: "/dashboard",
                   redirectUrlComplete: "/dashboard",
             });
       };
