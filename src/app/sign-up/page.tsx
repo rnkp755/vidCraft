@@ -3,7 +3,6 @@
 
 import { useState } from "react";
 import { useSignUp } from "@clerk/nextjs";
-import { OAuthStrategy } from "@clerk/types";
 import { useRouter } from "next/navigation";
 import Link from "next/link";
 import { Input } from "@/components/ui/input";
@@ -72,14 +71,6 @@ export default function SignUp() {
                   </div>
             );
       }
-
-      const signUpWithFB = (strategy: OAuthStrategy) => {
-            return signUp.authenticateWithRedirect({
-                  strategy,
-                  redirectUrl: "/sign-up/sso-callback",
-                  redirectUrlComplete: "/dashboard",
-            });
-      };
 
       async function submit(e: React.FormEvent) {
             e.preventDefault();
@@ -287,6 +278,7 @@ export default function SignUp() {
                                                             </button>
                                                       </div>
                                                 </div>
+                                                <div id="clerk-captcha"></div>
                                                 {error && (
                                                       <Alert variant="destructive">
                                                             <AlertDescription className="text-red-500">

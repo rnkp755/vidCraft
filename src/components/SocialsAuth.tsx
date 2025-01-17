@@ -65,7 +65,7 @@ const SocialsAuth = () => {
                               height={50}
                         />
                   </div>
-                  <div>
+                  <div onClick={() => handleSignIn("oauth_facebook")}>
                         <Image
                               className="cursor-pointer"
                               src="/socials/fb-icon.svg"
@@ -74,7 +74,7 @@ const SocialsAuth = () => {
                               height={50}
                         />
                   </div>
-                  <div>
+                  <div onClick={() => handleSignIn("oauth_github")}>
                         <div className="bg-white rounded-full">
                               <Image
                                     className="cursor-pointer"
@@ -85,7 +85,7 @@ const SocialsAuth = () => {
                               />
                         </div>
                   </div>
-                  <div>
+                  <div onClick={() => handleSignIn("oauth_linkedin_oidc")}>
                         <div className="bg-white rounded-full">
                               <Image
                                     className="cursor-pointer"

@@ -156,6 +156,7 @@ export default function SignIn() {
                                                       </button>
                                                 </div>
                                           </div>
+                                          <div id="clerk-captcha"></div>
                                           {error && (
                                                 <Alert variant="destructive">
                                                       <AlertDescription className="text-red-500">
